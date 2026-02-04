@@ -1,1 +1,39 @@
-index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahiru Companion (Offline)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="scene" aria-hidden="true"></div>
+
+    <section class="character-area" aria-label="Mahiru">
+      <img id="character" src="assets/idle.png.gitkeep" alt="Mahiru" />
+    </section>
+
+    <section class="chat-panel" aria-label="Chat Panel">
+      <header class="chat-header">
+        <h1>Mahiru Companion</h1>
+        <p>Mode offline • Lokal • Konsisten</p>
+      </header>
+      <div id="chat-log" class="chat-log" aria-live="polite"></div>
+      <form id="chat-form" class="chat-form">
+        <input
+          id="user-input"
+          type="text"
+          placeholder="Tulis pesan..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Kirim</button>
+      </form>
+      <div class="status" id="status">Siap.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
