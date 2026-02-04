@@ -28,6 +28,19 @@ const STATE = {
   sleepTimer: null,
 };
 
+function normalizeMemory(memory) {
+  return {
+    summary: memory?.summary || "",
+    facts: Array.isArray(memory?.facts) ? memory.facts : [],
+    preferences: Array.isArray(memory?.preferences) ? memory.preferences : [],
+    keywords: Array.isArray(memory?.keywords) ? memory.keywords : [],
+    emotion_patterns: memory?.emotion_patterns && typeof memory.emotion_patterns === "object"
+      ? memory.emotion_patterns
+      : {},
+    last_updated: memory?.last_updated || null,
+  };
+}
+
 const POSITIVE_WORDS = ["senang", "bahagia", "suka", "bagus", "mantap", "terima kasih", "puas", "lega"];
 const NEGATIVE_WORDS = ["sedih", "kesal", "marah", "kecewa", "capek", "bingung", "khawatir", "lelah"];
 const STOP_WORDS = [
@@ -202,7 +215,7 @@ async function loadMemory() {
     const response = await fetch("/api/memory");
     if (!response.ok) throw new Error("Gagal memuat memori");
     const data = await response.json();
-    STATE.longTerm = data;
+    STATE.longTerm = normalizeMemory(data);
   } catch (error) {
     setStatus("Memori lokal tidak bisa dimuat. Menggunakan memori sementara.");
   }

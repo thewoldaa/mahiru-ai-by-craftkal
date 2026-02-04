@@ -101,8 +101,30 @@ async function handleMemory(req, res) {
         });
         return;
       }
-      res.writeHead(200, { "Content-Type": "application/json" });
-      res.end(data);
+      try {
+        const parsed = JSON.parse(data);
+        const normalized = {
+          summary: parsed.summary || "",
+          facts: Array.isArray(parsed.facts) ? parsed.facts : [],
+          preferences: Array.isArray(parsed.preferences) ? parsed.preferences : [],
+          keywords: Array.isArray(parsed.keywords) ? parsed.keywords : [],
+          emotion_patterns: parsed.emotion_patterns && typeof parsed.emotion_patterns === "object"
+            ? parsed.emotion_patterns
+            : {},
+          last_updated: parsed.last_updated || null,
+        };
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify(normalized));
+      } catch (error) {
+        sendJSON(res, 200, {
+          summary: "",
+          facts: [],
+          preferences: [],
+          keywords: [],
+          emotion_patterns: {},
+          last_updated: null,
+        });
+      }
     });
     return;
   }
