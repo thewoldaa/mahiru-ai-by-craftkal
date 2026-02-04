@@ -15,6 +15,30 @@ const MIME_TYPES = {
   ".gitkeep": "text/plain",
 };
 
+function buildDefaultMemory() {
+  return {
+    summary: "",
+    facts: [],
+    preferences: [],
+    keywords: [],
+    emotion_patterns: {},
+    last_updated: null,
+  };
+}
+
+function normalizeMemory(memory) {
+  return {
+    summary: memory?.summary || "",
+    facts: Array.isArray(memory?.facts) ? memory.facts : [],
+    preferences: Array.isArray(memory?.preferences) ? memory.preferences : [],
+    keywords: Array.isArray(memory?.keywords) ? memory.keywords : [],
+    emotion_patterns: memory?.emotion_patterns && typeof memory.emotion_patterns === "object"
+      ? memory.emotion_patterns
+      : {},
+    last_updated: memory?.last_updated || null,
+  };
+}
+
 function sendJSON(res, status, data) {
   const payload = JSON.stringify(data);
   res.writeHead(status, { "Content-Type": "application/json" });
@@ -91,38 +115,21 @@ async function handleMemory(req, res) {
   if (req.method === "GET") {
     fs.readFile(MEMORY_PATH, "utf8", (err, data) => {
       if (err) {
-        sendJSON(res, 200, {
-          summary: "",
-          facts: [],
-          preferences: [],
-          keywords: [],
-          emotion_patterns: {},
-          last_updated: null,
+        const fallback = buildDefaultMemory();
+        fs.writeFile(MEMORY_PATH, JSON.stringify(fallback, null, 2), () => {
+          sendJSON(res, 200, fallback);
         });
         return;
       }
       try {
         const parsed = JSON.parse(data);
-        const normalized = {
-          summary: parsed.summary || "",
-          facts: Array.isArray(parsed.facts) ? parsed.facts : [],
-          preferences: Array.isArray(parsed.preferences) ? parsed.preferences : [],
-          keywords: Array.isArray(parsed.keywords) ? parsed.keywords : [],
-          emotion_patterns: parsed.emotion_patterns && typeof parsed.emotion_patterns === "object"
-            ? parsed.emotion_patterns
-            : {},
-          last_updated: parsed.last_updated || null,
-        };
+        const normalized = normalizeMemory(parsed);
         res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify(normalized));
       } catch (error) {
-        sendJSON(res, 200, {
-          summary: "",
-          facts: [],
-          preferences: [],
-          keywords: [],
-          emotion_patterns: {},
-          last_updated: null,
+        const fallback = buildDefaultMemory();
+        fs.writeFile(MEMORY_PATH, JSON.stringify(fallback, null, 2), () => {
+          sendJSON(res, 200, fallback);
         });
       }
     });
@@ -132,7 +139,8 @@ async function handleMemory(req, res) {
   if (req.method === "POST") {
     try {
       const payload = await readBody(req);
-      fs.writeFile(MEMORY_PATH, JSON.stringify(payload, null, 2), (err) => {
+      const normalized = normalizeMemory(payload);
+      fs.writeFile(MEMORY_PATH, JSON.stringify(normalized, null, 2), (err) => {
         if (err) {
           sendJSON(res, 500, { ok: false });
           return;
