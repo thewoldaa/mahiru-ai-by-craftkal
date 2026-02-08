@@ -1,0 +1,43 @@
+{
+  "good": {
+    "title": "Good Ending",
+    "requirements": {
+      "stats": {
+        "rina_affection": 80,
+        "family_trust": 70
+      }
+    },
+    "description": "Keluarga harmonis dan bahagia."
+  },
+  "normal": {
+    "title": "Normal Ending",
+    "requirements": {
+      "stats": {
+        "rina_affection": 50
+      }
+    },
+    "description": "Hidup berjalan normal."
+  },
+  "bad": {
+    "title": "Bad Ending",
+    "requirements": {
+      "stats": {
+        "rina_affection": 0
+      }
+    },
+    "description": "Hubungan keluarga retak."
+  },
+  "secret": {
+    "title": "Secret Ending",
+    "requirements": {
+      "flags": {
+        "found_secret": true
+      },
+      "stats": {
+        "rina_affection": 90,
+        "trust": 80
+      }
+    },
+    "description": "True ending dengan rahasia terpecahkan."
+  }
+}

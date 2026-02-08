@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  vn:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SECRET_KEY=compose-secret
+      - DATABASE_URL=sqlite:///data/game.db
+    volumes:
+      - ./:/app

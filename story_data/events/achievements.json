@@ -1,0 +1,242 @@
+{
+  "ach_01": {
+    "title": "Achievement 01",
+    "description": "Pencapaian ke-1",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 3
+    }
+  },
+  "ach_02": {
+    "title": "Achievement 02",
+    "description": "Pencapaian ke-2",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 6
+    }
+  },
+  "ach_03": {
+    "title": "Achievement 03",
+    "description": "Pencapaian ke-3",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 9
+    }
+  },
+  "ach_04": {
+    "title": "Achievement 04",
+    "description": "Pencapaian ke-4",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 12
+    }
+  },
+  "ach_05": {
+    "title": "Achievement 05",
+    "description": "Pencapaian ke-5",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 15
+    }
+  },
+  "ach_06": {
+    "title": "Achievement 06",
+    "description": "Pencapaian ke-6",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 18
+    }
+  },
+  "ach_07": {
+    "title": "Achievement 07",
+    "description": "Pencapaian ke-7",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 21
+    }
+  },
+  "ach_08": {
+    "title": "Achievement 08",
+    "description": "Pencapaian ke-8",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 24
+    }
+  },
+  "ach_09": {
+    "title": "Achievement 09",
+    "description": "Pencapaian ke-9",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 27
+    }
+  },
+  "ach_10": {
+    "title": "Achievement 10",
+    "description": "Pencapaian ke-10",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 30
+    }
+  },
+  "ach_11": {
+    "title": "Achievement 11",
+    "description": "Pencapaian ke-11",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 33
+    }
+  },
+  "ach_12": {
+    "title": "Achievement 12",
+    "description": "Pencapaian ke-12",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 36
+    }
+  },
+  "ach_13": {
+    "title": "Achievement 13",
+    "description": "Pencapaian ke-13",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 39
+    }
+  },
+  "ach_14": {
+    "title": "Achievement 14",
+    "description": "Pencapaian ke-14",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 42
+    }
+  },
+  "ach_15": {
+    "title": "Achievement 15",
+    "description": "Pencapaian ke-15",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 45
+    }
+  },
+  "ach_16": {
+    "title": "Achievement 16",
+    "description": "Pencapaian ke-16",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 48
+    }
+  },
+  "ach_17": {
+    "title": "Achievement 17",
+    "description": "Pencapaian ke-17",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 51
+    }
+  },
+  "ach_18": {
+    "title": "Achievement 18",
+    "description": "Pencapaian ke-18",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 54
+    }
+  },
+  "ach_19": {
+    "title": "Achievement 19",
+    "description": "Pencapaian ke-19",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 57
+    }
+  },
+  "ach_20": {
+    "title": "Achievement 20",
+    "description": "Pencapaian ke-20",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 60
+    }
+  },
+  "ach_21": {
+    "title": "Achievement 21",
+    "description": "Pencapaian ke-21",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 63
+    }
+  },
+  "ach_22": {
+    "title": "Achievement 22",
+    "description": "Pencapaian ke-22",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 66
+    }
+  },
+  "ach_23": {
+    "title": "Achievement 23",
+    "description": "Pencapaian ke-23",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 69
+    }
+  },
+  "ach_24": {
+    "title": "Achievement 24",
+    "description": "Pencapaian ke-24",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 72
+    }
+  },
+  "ach_25": {
+    "title": "Achievement 25",
+    "description": "Pencapaian ke-25",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 75
+    }
+  },
+  "ach_26": {
+    "title": "Achievement 26",
+    "description": "Pencapaian ke-26",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 78
+    }
+  },
+  "ach_27": {
+    "title": "Achievement 27",
+    "description": "Pencapaian ke-27",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 81
+    }
+  },
+  "ach_28": {
+    "title": "Achievement 28",
+    "description": "Pencapaian ke-28",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 84
+    }
+  },
+  "ach_29": {
+    "title": "Achievement 29",
+    "description": "Pencapaian ke-29",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 87
+    }
+  },
+  "ach_30": {
+    "title": "Achievement 30",
+    "description": "Pencapaian ke-30",
+    "rule": {
+      "stat": "rina_affection",
+      "min": 90
+    }
+  }
+}

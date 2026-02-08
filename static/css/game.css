@@ -1,0 +1,8 @@
+.game { position:relative; width:min(1200px,100vw); height:min(680px,100vh); margin:auto; overflow:hidden; background:#000; }
+.game__background { position:absolute; inset:0; background:linear-gradient(120deg,#1e3a8a,#7c3aed); transition:all .4s; }
+.game__sprites { position:absolute; inset:0; display:flex; justify-content:center; align-items:flex-end; gap:2rem; padding-bottom:8rem; }
+.dialog { position:absolute; left:1rem; right:1rem; bottom:1rem; background:rgba(17,24,39,.9); border:1px solid #374151; border-radius:12px; padding:1rem; }
+.dialog__speaker { color:#f9a8d4; font-weight:700; margin-bottom:.4rem; }
+.dialog__choices { margin-top:.8rem; display:grid; gap:.5rem; }
+.dialog__choices button { width:100%; }
+.game__controls { position:absolute; top:1rem; right:1rem; display:flex; gap:.5rem; }

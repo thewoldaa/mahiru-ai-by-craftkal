@@ -1,0 +1,606 @@
+{
+  "chapter": 10,
+  "title": "Keputusan Akhir",
+  "scenes": [
+    {
+      "id": "ch10_scene_1",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_1.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "happy",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "smile",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Rina",
+      "dialogue": "[Keputusan Akhir] Scene 1: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s1_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_1_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_2",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_1_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_2",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_1_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_2",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_2",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_2.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "teasing",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "smile",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Aldi",
+      "dialogue": "[Keputusan Akhir] Scene 2: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s2_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_2_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_3",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_2_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_3",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_2_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_3",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_3",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_3.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "happy",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "serious",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Rina",
+      "dialogue": "[Keputusan Akhir] Scene 3: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s3_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_3_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_4",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_3_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_4",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_3_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_4",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_4",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_4.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "teasing",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "smile",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Aldi",
+      "dialogue": "[Keputusan Akhir] Scene 4: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s4_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_4_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_5",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_4_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_5",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_4_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_5",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_5",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_5.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "happy",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "smile",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Rina",
+      "dialogue": "[Keputusan Akhir] Scene 5: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s5_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_5_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_6",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_5_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_6",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_5_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_6",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_6",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_6.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "teasing",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "serious",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Aldi",
+      "dialogue": "[Keputusan Akhir] Scene 6: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s6_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_6_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_7",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_6_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_7",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_6_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_7",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_7",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_7.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "happy",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "smile",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Rina",
+      "dialogue": "[Keputusan Akhir] Scene 7: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s7_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_7_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_8",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_7_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_8",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_7_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_8",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_8",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_8.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "teasing",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "smile",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Aldi",
+      "dialogue": "[Keputusan Akhir] Scene 8: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s8_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_8_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_9",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_8_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_9",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_8_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_9",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_9",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_9.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "happy",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "serious",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Rina",
+      "dialogue": "[Keputusan Akhir] Scene 9: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s9_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_9_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ch10_scene_10",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_9_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ch10_scene_10",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_9_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ch10_scene_10",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    },
+    {
+      "id": "ch10_scene_10",
+      "chapter": 10,
+      "title": "Keputusan Akhir",
+      "background": "chapter_10_bg_10.png",
+      "characters": [
+        {
+          "id": "rina",
+          "expression": "teasing",
+          "position": "center",
+          "transition": "fade_in"
+        },
+        {
+          "id": "aldi",
+          "expression": "smile",
+          "position": "left",
+          "transition": "slide_in"
+        }
+      ],
+      "speaker": "Aldi",
+      "dialogue": "[Keputusan Akhir] Scene 10: cerita berkembang berdasarkan pilihanmu.",
+      "music": "bgm_drama.mp3",
+      "sound_effect": "click.wav",
+      "set_flags": {
+        "ch10_s10_seen": true
+      },
+      "time_pass": 15,
+      "choices": [
+        {
+          "id": "ch10_scene_10_choice_1",
+          "text": "Respon hangat",
+          "next_scene": "ending_selector",
+          "stat_changes": {
+            "rina_affection": 5,
+            "family_trust": 3
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_10_choice_2",
+          "text": "Respon netral",
+          "next_scene": "ending_selector",
+          "stat_changes": {
+            "rina_affection": 2,
+            "trust": 2
+          },
+          "requirements": {}
+        },
+        {
+          "id": "ch10_scene_10_choice_3",
+          "text": "Respon dingin",
+          "next_scene": "ending_selector",
+          "stat_changes": {
+            "rina_affection": -3,
+            "family_trust": -2
+          },
+          "requirements": {}
+        }
+      ]
+    }
+  ]
+}

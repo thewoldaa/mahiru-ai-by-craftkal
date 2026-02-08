@@ -1,0 +1,93 @@
+{
+  "rina": {
+    "id": "rina",
+    "name": "Rina Tanaka",
+    "age": 17,
+    "bio": "Adik tiri yang baru pindah...",
+    "personality": [
+      "Nakal",
+      "Manja",
+      "Cerdas",
+      "Sensitif"
+    ],
+    "likes": [
+      "Cokelat",
+      "Film horor",
+      "Gaming"
+    ],
+    "dislikes": [
+      "Sayur pahit",
+      "Kebohongan"
+    ],
+    "voice_profile": {
+      "pitch": 1.2,
+      "speed": 1.1
+    }
+  },
+  "aldi": {
+    "id": "aldi",
+    "name": "Aldi Pratama",
+    "age": 19,
+    "bio": "Kakak tiri yang sabar.",
+    "personality": [
+      "Baik hati",
+      "Sabar",
+      "Bertanggung jawab"
+    ],
+    "likes": [
+      "Membaca",
+      "Ngopi"
+    ],
+    "dislikes": [
+      "Keributan"
+    ],
+    "voice_profile": {
+      "pitch": 1.0,
+      "speed": 1.0
+    }
+  },
+  "mother": {
+    "id": "mother",
+    "name": "Sari Dewi",
+    "age": 42,
+    "bio": "Ibu penyayang namun sibuk.",
+    "personality": [
+      "Penyayang",
+      "Sibuk",
+      "Protective"
+    ]
+  },
+  "father": {
+    "id": "father",
+    "name": "Hiroshi Tanaka",
+    "age": 45,
+    "bio": "Ayah bijaksana.",
+    "personality": [
+      "Bijaksana",
+      "Tenang",
+      "Pekerja keras"
+    ]
+  },
+  "sari": {
+    "id": "sari",
+    "name": "Sari Wulandari",
+    "age": 17,
+    "bio": "Teman cerewet Rina",
+    "personality": [
+      "Ceria",
+      "Ramah",
+      "Cerewet"
+    ]
+  },
+  "budi": {
+    "id": "budi",
+    "name": "Budi Santoso",
+    "age": 19,
+    "bio": "Sahabat Aldi",
+    "personality": [
+      "Santai",
+      "Humoris",
+      "Setia"
+    ]
+  }
+}

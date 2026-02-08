@@ -1,0 +1,30 @@
+{
+  "choco": {
+    "name": "Cokelat Favorit",
+    "description": "Menaikkan affection Rina",
+    "effect": {
+      "rina_affection": 5
+    }
+  },
+  "bandage": {
+    "name": "Perban",
+    "description": "Untuk event chapter 5",
+    "effect": {
+      "trust": 3
+    }
+  },
+  "festival_ticket": {
+    "name": "Tiket Festival",
+    "description": "Membuka route festival",
+    "effect": {
+      "festival_points": 10
+    }
+  },
+  "old_photo": {
+    "name": "Foto Lama",
+    "description": "Kunci secret ending",
+    "effect": {
+      "secret_points": 20
+    }
+  }
+}
