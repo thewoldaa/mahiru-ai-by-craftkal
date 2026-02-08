@@ -1,0 +1,2 @@
+.home { min-height:100vh; display:grid; place-content:center; gap:1rem; text-align:center; }
+.actions { display:flex; gap:1rem; justify-content:center; }

@@ -1,0 +1,8 @@
+:root { --bg:#111827; --panel:#1f2937; --text:#f9fafb; --accent:#f472b6; }
+* { box-sizing:border-box; font-family:Inter,Arial,sans-serif; }
+body { margin:0; background:var(--bg); color:var(--text); }
+.card { max-width:520px; margin:2rem auto; padding:1.25rem; background:var(--panel); border-radius:12px; display:flex; flex-direction:column; gap:.75rem; }
+input,button,.btn { padding:.65rem .8rem; border-radius:8px; border:none; }
+button,.btn { background:var(--accent); color:#111; font-weight:700; cursor:pointer; text-decoration:none; text-align:center; }
+.btn-secondary { background:#94a3b8; }
+.error { color:#fca5a5; }

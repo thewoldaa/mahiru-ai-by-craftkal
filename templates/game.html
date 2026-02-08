@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+</head>
+<body>
+  <section class="game" id="game-root">
+    <div id="background" class="game__background"></div>
+    <div id="sprites" class="game__sprites"></div>
+    {% include 'components/dialog_box.html' %}
+    <div class="game__controls">
+      <button id="quick-save">Quick Save</button>
+      <button id="quick-load">Quick Load</button>
+      <button id="auto-play">Auto</button>
+      <button id="skip">Skip</button>
+    </div>
+  </section>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script type="module" src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+@media (max-width:1199px){ .game{height:100vh;} }
+@media (max-width:767px){ .game__controls{left:.5rem; right:.5rem; top:auto; bottom:13rem; flex-wrap:wrap;} .dialog{font-size:.95rem;} }

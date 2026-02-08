@@ -1,0 +1,10 @@
+{
+  "project_name": "Adik Tiri yang Nakal",
+  "version": "1.0.0",
+  "debug": true,
+  "secret_key": "change-me",
+  "database_url": "sqlite:///data/game.db",
+  "default_scene": "ch1_scene_1",
+  "max_save_slots": 20,
+  "supported_languages": ["id", "en"]
+}
